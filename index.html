@@ -71,7 +71,7 @@
           <h2 class="title is-2 publication-title">Inferflow: an Efficient and Highly Configurable Inference Engine for Large Language Models</h2>
           <div class="is-size-5">
             <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=Lg31AKMAAAAJ&hl=en" style="color:#008AD7;font-weight:normal;">Shuming Shi
+                <a href="https://scholar.google.com/citations?user=Lg31AKMAAAAJ&hl=en" style="color:#008AD7;font-weight:normal;">Shuming Shi<sup>1</sup>
                 </a>,
             </span>
             <span class="author-block">
@@ -79,33 +79,35 @@
             </span>
 
            <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=KpbRLYcAAAAJ&hl=en" style="color:#008AD7;font-weight:normal;">Deng Cai</a>,
+                <a href="https://scholar.google.com/citations?user=KpbRLYcAAAAJ&hl=en" style="color:#008AD7;font-weight:normal;">Deng Cai</a><sup>1</sup>,
             </span>
 
             <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=6YVwZgkAAAAJ&hl=en" style="color:#008AD7;font-weight:normal;">Leyang Cui</a>,
+                <a href="https://scholar.google.com/citations?user=6YVwZgkAAAAJ&hl=en" style="color:#008AD7;font-weight:normal;">Leyang Cui</a><sup>1</sup>,
             </span>
 
            <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=QmyPDWQAAAAJ&hl=en" style="color:#008AD7;font-weight:normal;">Xinting Huang</a>,
+                <a href="https://scholar.google.com/citations?user=QmyPDWQAAAAJ&hl=en" style="color:#008AD7;font-weight:normal;">Xinting Huang</a><sup>1</sup>,
             </span>
 
             <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=_1jSi34AAAAJ&hl=en" style="color:#008AD7;font-weight:normal;">Huayang Li</a>
+                <a href="https://scholar.google.com/citations?user=_1jSi34AAAAJ&hl=en" style="color:#008AD7;font-weight:normal;">Huayang Li</a><sup>1,2*</sup>
             </span>
 
 
             </br>
 
-
+              <div class="is-size-5 publication-authors">
+            <span class="author-block"><b style="color:#FD4946; font-weight:normal"><sup>1</sup> Tencent AI Lab </b></span>
+            <span class="author-block"><b style="color:#F2A900; font-weight:normal"><sup>2</sup> Nara Institute of Science and Technology</b></span>
+          </div>
+            <div class="is-size-5 publication-authors">
+            <span class="author-block" style="font-size: 90%;"><sup>*</sup>Work was done during the internship at Tencent AI Lab.</span>
           </div>
 
-          <br>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><b style="color:#FD4946; font-weight:normal">Tencent AI Lab </b></span>
-            
 
-          </div>
+           </div>
+
 
           <br>
 
@@ -170,7 +172,6 @@
           <p>
            We present <b>Inferflow</b>, an efficient and highly configurable inference engine for large language models (LLMs). With Inferflow, users can serve most of the common transformer models by simply modifying some lines in corresponding configuration files, without writing a single line of source code.
             Compared with most existing inference engines, Inferflow has some key features. First, by implementing a modular framework of atomic build-blocks and technologies, Inferflow is compositionally generalizable to new models. Second, 3.5-bit quantization is introduced in Inferflow as a tradeoff between 3-bit and 4-bit quantization. Third, hybrid model partitioning for multi-GPU inference is introduced in Inferflow to better balance inference speed and throughput than the commonly-adopted partition-by-layer and partition-by-tensor strategies.
-
           </p>
         </div>
       </div>
