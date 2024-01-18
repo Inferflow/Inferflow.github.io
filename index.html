@@ -1,0 +1,322 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Inferflow">
+  <meta name="keywords" content="Inference, open-source, LLMs">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inferflow</title>
+
+  <meta name="google-site-verification" content="6lbYN1vX7A4sD8SrVniq84UEKyEUSBgxeP7d3FjuuK0" />
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <!-- <link rel="icon" href="./static/images/icon.png"> -->
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <link rel="shortcut icon" href="path/to/favicon.ico" type="image/x-icon">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  </head>
+
+  <style>
+
+    #main{
+        position: relative;;
+        width: 1200px;
+    }
+
+    .box{
+        float: left;
+        padding: 15px 0 0 15px;
+/*        background-color: red;*/
+    }
+
+    .pic{
+        width: 500px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+
+    .pic img{
+        width: 500px;
+    }
+
+  </style>
+
+
+
+  <body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title"></h1>
+          <h2 class="title is-2 publication-title">Inferflow: An Efficient and Highly Configurable Inference Engine and Service for Large Language Models</h2>
+          <div class="is-size-5">
+            <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=Lg31AKMAAAAJ&hl=en" style="color:#008AD7;font-weight:normal;">Shuming Shi
+                </a>,
+            </span>
+            <span class="author-block">
+                <a style="color:#008AD7;font-weight:normal;">Enbo Zhao</a>,
+            </span>
+
+           <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=KpbRLYcAAAAJ&hl=en" style="color:#008AD7;font-weight:normal;">Deng Cai</a>,
+            </span>
+
+            <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=6YVwZgkAAAAJ&hl=en" style="color:#008AD7;font-weight:normal;">Leyang Cui</a>,
+            </span>
+
+           <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=QmyPDWQAAAAJ&hl=en" style="color:#008AD7;font-weight:normal;">Xinting Huang</a>,
+            </span>
+
+            <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=_1jSi34AAAAJ&hl=en" style="color:#008AD7;font-weight:normal;">Huayang Li</a>
+            </span>
+
+
+            </br>
+
+
+          </div>
+
+          <br>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><b style="color:#FD4946; font-weight:normal">Tencent AI Lab </b></span>
+            
+
+          </div>
+
+          <br>
+
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2401.08294" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              
+              <span class="link-block">
+                <a href="https://github.com/inferflow/inferflow" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+      window.addEventListener('load', function() {
+        const urls = [
+          'https://bb0eec8976f38a480c.gradio.live',
+          'https://94c50413658b59829f.gradio.live',
+          'https://16440e488436f49d99.gradio.live',
+          'https://02edd560d60615d755.gradio.live',
+        ];
+        const randomIndex = Math.floor(Math.random() * urls.length);
+        const randomURL = urls[randomIndex];
+        const iframe = document.getElementById('gradio');
+        iframe.setAttribute('src', randomURL);
+      });
+    </script>
+
+
+<link rel="stylesheet" type="text/css" href="js/simple_style.css" />
+<script type="text/javascript" src="js/simple_swiper.js"></script>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+           We present <b>Inferflow</b>, an efficient and highly configurable inference engine for large language models (LLMs). With Inferflow, users can serve most of the common transformer models by simply modifying some lines in corresponding configuration files, without writing a single line of source code.
+            Compared with most existing inference engines, Inferflow has some key features. First, by implementing a modular framework of atomic build-blocks and technologies, Inferflow is compositionally generalizable to new models. Second, 3.5-bit quantization is introduced in Inferflow as a tradeoff between 3-bit and 4-bit quantization. Third, hybrid model partitioning for multi-GPU inference is introduced in Inferflow to better balance inference speed and throughput than the commonly-adopted partition-by-layer and partition-by-tensor strategies.
+
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+
+      <div class="column is-six-fifths">
+           <h2 class="title is-3">Inferflow</h2>
+        <div class="content has-text-justified">
+          <p>We list major requirements for an LLM inference engine and possible technologies to address them.</p>
+        </div>
+         <img id="model" width="80%" src="images/illustration.jpg">
+          <!--
+          <body>
+          <embed src="images/illstration.pdf" type="application/pdf" width="100%" height="600px">
+          </body>
+        -->
+          <!-- <object data="example.pdf" type="images/illustration.pdf" width="100%" height="100%">-->
+        <h3 class="subtitle has-text-centered">
+          <p style="font-family:Times New Roman"><b>Implementation status of key technologies in Inferflow</b></p>
+        </h3>
+      </div>
+    </div>
+
+          <div class="container is-max-desktop content">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                color: #333;
+            }
+
+            h3 {
+                color: #333;
+                font-size: 1.5em;
+                border-bottom: 1px solid #ddd;
+                padding-bottom: 3px;
+            }
+        </style>
+        <h3>Main Features</h3>
+        <li><b>Extensible and Highly configurable</b>: A typical way of using Inferflow to serve a new model is editing a model specification file, but not adding/editing source codes.
+        We implement in Inferflow a modular framework of atomic building-blocks and technologies, making it compositionally generalizable to new models.
+        A new model can be served by Inferflow if the atomic building-blocks and technologies in this model have been "known" (to Inferflow).
+        </li>
+        <li><b>3.5-bit quantization</b>: Inferflow implements 2-bit, 3-bit, 3.5-bit, 4-bit, 5-bit, 6-bit and 8-bit quantization.
+        Among the quantization schemes, 3.5-bit quantization is a new one introduced by Inferflow.
+        </li>
+        <li><b>Hybrid model partition for multi-GPU inference</b>: Inferflow supports multi-GPU inference with three model partitioning strategies to choose from: partition-by-layer, partition-by-tensor, and hybrid partitioning. Hybrid partitioning is seldomly supported by other inference engines.</li>
+        <li>
+            <b>Wide file format support (and safely loading pickle data)</b>: Inferflow supports loading models of multiple file formats directly, without reliance on an external converter.
+            Supported formats include pickle, safetensors, llama.cpp gguf, etc.
+            It is known that there are <a href="https://huggingface.co/docs/hub/security-pickle">security issues</a> to read pickle files using Python codes.
+            By implementing a simplified pickle parser in C++, Inferflow supports safely loading models from pickle data.
+        </li>
+        <li><b>Wide network type support</b>: Supporting three types transformer models: decoder-only models, encoder-only models, and encoder-decoder models.
+        </li>
+        <li><b>GPU/CPU hybrid inference</b>: Supporting GPU-only, CPU-only, and GPU/CPU hybrid inference.</li>
+
+
+        Many key modules of the model network can be specified by configration, including layer normalization functions, activation functions, position embedding algorithms, tensor names, etc.
+
+
+    </div>
+
+        <div class="columns is-centered has-text-centered">
+      <div class="column is-six-fifths">
+        <div class="content has-text-justified">
+            <h3>Comparison</h3>
+        <style>
+            table { border-collapse: collapse;
+                width: 100%;
+                font-family: Arial,
+                sans-serif; } th,
+           td { border: 1px solid #ddd;
+                text-align: left;
+                padding: 8px; } th
+           { background-color: #f2f2f2; font-weight: bold; } tr:nth-child(even) { background-color: #f2f2f2; }
+        </style>
+
+            <table>
+                <thead> <tr> <th>Model</th> <th>New Model Support</th> <th>Supported File Formats</th> <th>Network Structures</th> <th>Quantization Bits</th> <th>Hybrid Parallelism for Multi-GPU Inference</th> <th>Programming Languages</th> </tr> </thead>
+                <tbody>
+                <tr> <td><a href="https://huggingface.co/docs/transformers/index">Huggingface Transformers</a></td> <td>Adding/editing source codes</td> <td>pickle (unsafe), safetensors</td> <td>decoder-only, encoder-decoder, encoder-only</td> <td>4b, 8b</td> <td>&#10008;</td> <td>Python</td> </tr> <tr> <td><a href="https://github.com/vllm-project/vllm">vLLM</a></td> <td>Adding/editing source codes</td> <td>pickle (unsafe), safetensors</td> <td>decoder-only</td> <td>4b, 8b</td> <td>&#10008;</td> <td>Python</td> </tr>
+                <tr> <td><a href="https://github.com/NVIDIA/TensorRT-LLM">TensorRT-LLM</a></td> <td>Adding/editing source codes</td> <td></td> <td>decoder-only, encoder-decoder, encoder-only</td> <td>4b, 8b</td> <td>&#10008;</td> <td>C++, Python</td> </tr>
+                <tr> <td><a href="https://github.com/microsoft/DeepSpeed-MII">DeepSpeed-MII</a></td> <td>Adding/editing source codes</td> <td>pickle (unsafe), safetensors</td> <td>decoder-only</td> <td>-</td> <td>&#10008;</td> <td>Python</td> </tr>
+                <tr> <td><a href="https://github.com/ggerganov/llama.cpp">llama.cpp</a></td> <td>Adding/editing source codes</td> <td>gguf</td> <td>decoder-only</td> <td>2b, 3b, 4b, 5b, 6b, 8b</td> <td>&#10008;</td> <td>C/C++</td> </tr>
+                <tr> <td><a href="https://github.com/karpathy/llama2.c">llama2.c</a></td> <td>Adding/editing source codes</td> <td>llama2.c</td> <td>decoder-only</td> <td>-</td> <td>&#10008;</td> <td>C</td> </tr>
+                <tr> <td><a href="https://github.com/InternLM/lmdeploy">LMDeploy</a></td> <td>Adding/editing source codes</td> <td>pickle (unsafe), TurboMind</td> <td>decoder-only</td> <td>4b, 8b</td> <td>&#10008;</td> <td>C++, Python</td> </tr>
+                <tr> <td><strong>Inferflow</strong></td> <td><strong>Editing configuration files</strong></td> <td>pickle (<strong>safe</strong>), safetensors, gguf, llama2.c</td> <td>decoder-only, encoder-decoder, encoder-only</td> <td>2b, 3b, <strong>3.5b</strong>, 4b, 5b, 6b, 8b</td> <td>&#10004;</td> <td>C++</td> </tr>
+                </tbody>
+                </table>
+        </div>
+
+        <h3 class="subtitle has-text-centered">
+          <p style="font-family:Times New Roman"><b>Comparison between Inferflow and other inference engines</b></p>
+        </h3>
+
+      </div>
+
+    </div>
+
+      <h3> Getting Started </h3>
+      Get started with exploring our <a href="https://github.com/inferflow/inferflow?tab=readme-ov-file#get-the-code">GitHub repository</a>.
+  </div>
+</section>
+
+
+<script src="js/Underscore-min.js"></script>
+<script src="js/index.js"></script>
+
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+@misc{shi2024inferflow,
+    title={Inferflow: an Efficient and Highly Configurable Inference Engine for Large Language Models},
+    author={Shuming Shi and Enbo Zhao and Deng Cai and Leyang Cui and Xinting Huang and Huayang Li},
+    year={2024},
+    eprint={2401.08294},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+</code></pre>
+  </div>
+</section>
+
+<section class="section" id="Acknowledgement">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Acknowledgement</h2>
+    <p>
+      The CPU inference part of Inferflow is based on the amazing <a href="https://github.com/ggerganov/ggml">ggml</a> library and <a href="https://github.com/ggerganov/llama.cpp">llama.cpp</a>.
+      The FP16 data type in the CPU-only version of Inferflow is from the <a href="https://half.sourceforge.net/">Half-precision floating-point library</a>.
+      We express our sincere gratitude to the maintainers and implementers of these source codes and tools.
+    </p>
+    <p>
+      This website template is borrowed from the <a
+      href="https://panda-gpt.github.io/">PandaGPT</a> project and the <a
+      href="https://textbind.github.io/">Textbind</a> project, which is adapted from <a
+      href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>, licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+    </p>
+  </div>
+</section>
+
+</body>
+
+</html>
